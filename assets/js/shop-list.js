@@ -36,12 +36,9 @@ var maftol = ["ورق غار", "حمص حب", "بصل", "دجاج", "ماجي", 
 var frykeh = ["فريكة", "لحمة ناعمة", "لبن", "ماجي", "بصل"];
 var bryani = ["ورق غار", "رز", "لبن", "دجاج", "بطاطا", "بهارات برياني"];
 var shorabet3adas = ["ماجي", "خبز", "ليمون", "بصل", "عدس احمر"]
-    // Append the friends to the DOM.
+var kottbularigrasas = [" potatis", "gurka", "citron", "persilja", "ströbröd", "blandfärs", "smör eller margarin", "peppar", "salt", "vispgrädde", "majsstärkelse"]
+var potatisplattar = ["potatis", " ägg", "vetemjöl", "salt", "vitkål", "rårörda lingon", "rapsolja eller smör", "ev stekt bacon eller sidfläsk"]
 
-// createFriendNode( mjadara )
-
-
-//<li> لبن <span><i class="fa fa-trash"></i></span></li>
 
 //check off specific Todo by clickng
 $("ul").on("click", "li", function() {
@@ -93,7 +90,14 @@ $("select").on("change", function(event) {
         createFoddList(bryani)
     } else if ($(this).val() === "shorabet3adas") {
         createFoddList(shorabet3adas)
+    } else if ($(this).val() === "kottbularigrasas") {
+        createFoddList(kottbularigrasas)
+    } else if ($(this).val() === "potatisplattar") {
+        createFoddList(potatisplattar)
     }
+
+
+
     Array.prototype.removeDuplicates = function() {
 
         var temp = new Array();

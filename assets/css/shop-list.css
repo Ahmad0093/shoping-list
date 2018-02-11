@@ -58,6 +58,17 @@ input {
     display: none;
 }
 
+.lang {
+    display: inline-block;
+    color: white;
+    width: 10%;
+    z-index: 3;
+}
+
+#svensk {
+    display: none;
+}
+
 select {
     font-size: 18px;
     background-color: #f7f7f7;
