@@ -120,7 +120,7 @@ span {
     text-decoration: line-through;
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 480px) {
     body {}
     #container {
         width: 80%;
